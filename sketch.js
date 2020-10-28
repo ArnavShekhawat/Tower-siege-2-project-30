@@ -12,7 +12,7 @@ function setup() {
 engine = Engine.create();
 world = engine.world;
 
-polygon = new Polygon(200, 300, 70);
+polygon = new Polygon(400, 300, 70);
 
 floor1 = new Ground(390,400,250,10);
 floor2 = new Ground(700,200,200,10);
@@ -47,7 +47,7 @@ block9 = new Block(670, 95, 30, 40, "pink");
 //lower roof top most
 block10 = new Block(640, 75, 30, 40, "green");
 
-sling= new SlingShot(polygon.body,{x:50, y:250});
+sling= new SlingShot(polygon.body,{x:400, y:250});
 
 Engine.run(world, engine);
 }
